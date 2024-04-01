@@ -45,13 +45,13 @@ st.markdown(
 def homepage():
     st.title("Legio Veteris")
     st.write("Bienvenido a la escuela de guerra y maleantería")
-    st.image("Legio Veteris.png")
+    st.markdown("![Legio Veteris](https://i.postimg.cc/43m7Y1S3/LegioVet.png)")
 
 # Función para la página de cada ejército
 def army_page(army_name):
     st.title(f"Ejército de {army_name}")
     if army_name == "Adeptus Custodes":
-        st.image("Custodes.jpg", caption="Ejército de Adeptus Custodes")
+        st.markdown("![Ejercito de Adeptus Custodes](https://i.postimg.cc/HkbbpzF1/Custodes.jpg)")
         st.write("Sólo en la muerte acaba el deber")
         st.write("**Unidades clave:**")
         st.write("""- Trajann Valoris: M6 R6 Sv2+ 4++ W7 LD5 OC2
@@ -63,7 +63,7 @@ def army_page(army_name):
         st.write("**Triquiñuelas varias:**")
         st.write("- Rapid Ingress con el campeón de filo y su unidad a 6 UM de un aliado; intervención heróica gratuita")
     elif army_name == "Devoradores de Mundos":
-        st.image("Angron.jpg", caption="Ejército de Devoradores de Mundos")
+        st.markdown("![Ejercito de Devoradores de Mundos](https://i.postimg.cc/MKqn7wFN/Angron.jpg)")
         st.write("¡Mata! ¡Mutila! ¡Quema!")
         st.write("**Unidades clave:**")
         st.write(""""- Angron: M14 R11 Sv2+ 4++ W16 LD5 OC6
@@ -72,7 +72,7 @@ def army_page(army_name):
         st.write("**Estratagemas importantes:**")
         st.write("- Autoavance 6 1CP Battle Tactic")
         st.write("**Triquiñuelas varias:**")
-        st.write(""""- Autoavance de 6, avanza-carga con blessing of khorne. No desplegar en primera línea contra ellos lo que no quieras
+        st.write("""- Autoavance de 6, avanza-carga con blessing of khorne. No desplegar en primera línea contra ellos lo que no quieras
         que muera.""")
 
 # Definición del menú lateral
